@@ -1,0 +1,55 @@
+table {
+    border-spacing: 0;
+    border-radius: 5px;
+    vertical-align: top;
+    border: 1px solid #000;
+}
+
+#inicio{
+    background: #52BE80;
+}
+
+#tableP{
+    text-align: center;
+}
+
+h2 {
+    margin-block-start: 0em;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+.seccion{
+    display: flex;
+}
+
+
+.column1{
+    background-color:rgb(197, 127, 127) ;
+}
+
+.column2{
+    background-color: cadetblue;
+}
+
+header {
+    background-color: rgb(122, 122, 199);
+
+}
+
+.column1{
+    border: #1c1c1c;
+}
+
+.column2{
+    border: #789415;
+}
+
+.seccion{
+    display: flex;
+    justify-content: center;
+    
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto DWEC - Domingo Antonio Nicolás García</title>
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+  <script src="imc.js"></script>
+  <script src="fcm.js"></script>
+  <script src="categoria.js"></script>
+  <script src="tabla.js"></script>
+</head>
+
+<body>
+  <h1>Asociación Deportiva de Cesur</h1>
+  <h2>Calculadora de IMC - Índice de masa corporal</h2>
+  <p>Peso:</p> <input id="kg" type="number" /><br>
+  <p>Altura:</p> <input id="cm" type="text" /><br><br>
+  <button onclick="calc_imc(); return true;">Calcular</button><br>
+
+  <p>IMC: <span id="imc"></span></p>
+  <p>Usted tiene: <span id="lectura"></span></p>
+
+  <h3>Clasificación Organización Mundial de la Salud</h3>
+  <table border width="50%" height="100px" id="tableP">
+    <tr align="center" id="Inicio">
+      <th scope="col">IMC</th>
+      <th scope="col">Clasificación</th>
+    </tr>
+    <tr id="DelgadezS">
+      <td>
+        <16.00< /td>
+      <td>Infrapeso: Delgadez Severa</td>
+    </tr>
+    <tr id="DelgadezM">
+      <td>16.00 - 16.99</td>
+      <td>Infrapeso: Delgadez moderada</td>
+    </tr>
+    <tr id="DelgadezA">
+      <td>17.00 - 18.49</td>
+      <td>Infrapeso: Delgadez aceptable</td>
+    </tr>
+    <tr id="PesoN">
+      <td>18.50 - 24.99</td>
+      <td>Peso Normal</td>
+    </tr>
+    <tr id="Sobrepeso">
+      <td>25.00 - 29.99</td>
+      <td>Sobrepeso</td>
+    </tr>
+    <tr id="ObesidadS">
+      <td>30.00 - 34.99</td>
+      <td>Obeso: Tipo I</td>
+    </tr>
+    <tr id="ObesidadM">
+      <td>35.00 - 40.00</td>
+      <td>Obeso: Tipo II</td>
+    </tr>
+    <tr id="ObesidadG">
+      <td>>40.00</td>
+      <td>Obeso: Tipo III</td>
+    </tr>
+  </table><br>
+  <hr>
+  <h2>Calculadora de FCM - Frecuencia Cardiaca Máxima</h2>
+  <p>Edad:</p> <input id="age" type="number">
+  <p>Sexo: <select class="form-select" id="sex" type="text" aria-label="Default select example">
+    <option selected>Elige una opcion</option>
+    <option value="1">Hombre</option>
+    <option value="2">Mujer</option>
+  </select></p>
+  <button onclick="calcularFCM()">Calcular</button>
+  <div>
+    <p>FCM: <span id="mensajeerror2"></span></p>
+  </div>
+  <br>
+  <h2>Calcula tu Categoria</h2>
+  <div>
+    <p>Edad:</p>
+    <input id="age2" type="number">
+  </div><br>
+  <div>
+    <button onclick="calcularCategoria()">Calcular</button>
+  </div>
+  <div>
+    <p>Su categoria es: <span id="mensajeerror3"></span></p>
+  </div>
+  <br>
+  <h2>Tabla</h2>
+  <div>
+    <input type="button" value="Genera una tabla" onclick="genera_tabla()">
+  </div>
+  <div>
+    <p>Tabla: <span id="mensajeerror4"></span></p>
+  </div>
+</body>
+</html>
